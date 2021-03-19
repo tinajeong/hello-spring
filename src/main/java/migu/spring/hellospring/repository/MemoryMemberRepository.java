@@ -1,6 +1,7 @@
 package migu.spring.hellospring.repository;
 
 import migu.spring.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 

@@ -2,7 +2,7 @@ package migu.spring.hellospring.service;
 
 import migu.spring.hellospring.domain.Member;
 import migu.spring.hellospring.repository.MemberRepository;
-import migu.spring.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +10,7 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
